@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mein Profiele</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Mein Profile</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Über mich</a></li>
+          <li><a href="#certification">Zertifikate</a></li>
+          <li><a href="#experience">Erfahrung</a></li>
+          <li><a href="#projects">Projekte</a></li>
+          <li><a href="#cloud">Cloud</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Mein Profile</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Über mich</a></li>
+          <li>
+            <a href="#certification" onclick="toggleMenu()">Zertifikate</a>
+          </li>
+          <li><a href="#experience" onclick="toggleMenu()">Erfahrung</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projekte</a></li>
+          <li><a href="#cloud">Cloud</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Kontakt</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-1.png" alt=" profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hallo, Ich bin</p>
+        <h1 class="title">Ashkan Pahlavan</h1>
+        <p class="section__text__p2">DevOps Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Lebenslauf(2).pdf')"
+          >
+            Download CV
+           </button>
+          
+          <button
+            class="btn btn-color-1"
+            onclick="window.open('./assets/contact.png')"
+          >
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <a
+            href="https://www.linkedin.com/in/ashkan-pahlavan/"
+            target="_blank"
+          >
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+            />
+          </a>
+          <a href="https://github.com/Ashkan-pahlavan" target="_blank">
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Erfahren Sie mehr</p>
+      <h1 class="title">Über mich</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/profile.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Erfahrung</h3>
+              <p>
+                1+ years <br />
+                Junior DevOps Engineer
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Weiterbildung</h3>
+              <p>
+                Cloud Computing <br />
+                DevOps Engineer
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Ich bin ein leidenschaftlicher DevOps und Cloud Solution Architekt
+              mit einem besonderen Fokus auf den Aufbau von Infrastruktur in
+              AWS. Als Quereinsteiger habe ich eine intensive 12-monatige
+              Weiterbildung bei Techstarter absolviert, um mein Wissen und meine
+              Fähigkeiten zu vertiefen. Während dieser Zeit habe ich
+              umfangreiche Erfahrungen in der Automatisierung und Optimierung
+              von Cloud-Umgebungen gesammelt. Mein Ziel ist es, durch effiziente
+              und skalierbare Lösungen den Mehrwert für Unternehmen zu
+              maximieren.
+            </p>
+          </div>
+        </div>
+      </div>
+      <a href="#certification">
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" />
+      </a>
+    </section>
+    <section id="certification">
+      <p class="section__text__p1">Meine</p>
+      <h1 class="title" style="padding: 10px">Zertifikate</h1>
+
+      <div class="certif">
+        <div class="section-container1">
+          <div class="about-details-container1">
+            <div class="about-containers1">
+              <div class="certif1">
+                <div class="details-container1">
+                  <img
+                    src="./assets/AWS.png"
+                    alt="Experience icon"
+                    class="icon1"
+                  />
+                  <h3>cloud practitioner</h3>
+                  <a
+                    href="https://www.credly.com/badges/2910fe4a-a949-4621-bd4e-5fdaf2fba1ae/public_url"
+                    target="_blank"
+                    style="color: darkgray"
+                    >Link zum Überprüfen</a
+                  >
+                </div>
+                <br />
+                <div class="details-container1">
+                  <img
+                    src="./assets/lpic.png"
+                    alt="Education icon"
+                    class="icon1"
+                  />
+                  <h3>Linux Essentials</h3>
+                  <a
+                    href="https://www.credly.com/badges/2910fe4a-a949-4621-bd4e-5fdaf2fba1ae/public_url"
+                    target="_blank"
+                    style="color: darkgray"
+                    >Link zum Überprüfen</a
+                  >
+                </div>
+              </div>
+              <div class="certif1">
+                <div class="details-container1">
+                  <img
+                    src="./assets/psm.png"
+                    alt="Experience icon"
+                    class="icon1"
+                  />
+                  <h3>scrum master</h3>
+                  <a
+                    href="https://www.credly.com/badges/2910fe4a-a949-4621-bd4e-5fdaf2fba1ae/public_url"
+                    target="_blank"
+                    style="color: darkgray"
+                    >Link zum Überprüfen</a
+                  >
+                </div>
+                <br />
+                <div class="details-container1">
+                  <img
+                    src="./assets/aws1.png"
+                    alt="Experience icon"
+                    class="icon1"
+                  />
+                  <h3>Solutions Architect</h3>
+                  <a
+                    href="https://www.credly.com/badges/2910fe4a-a949-4621-bd4e-5fdaf2fba1ae/public_url"
+                    target="_blank"
+                    style="color: darkgray"
+                    >Link zum Überprüfen</a
+                  >
+                </div>
+              </div>
+              <div class="certif1">
+                <div class="details-container1">
+                  <img
+                    src="./assets/lpic-1.webp"
+                    alt="Experience icon"
+                    class="icon1"
+                  />
+                  <h3>Linux Professional</h3>
+                  <a
+                    href="https://www.credly.com/badges/2910fe4a-a949-4621-bd4e-5fdaf2fba1ae/public_url"
+                    target="_blank"
+                    style="color: darkgray"
+                    >Link zum Überprüfen</a
+                  >
+                </div>
+                <br />
+                <div class="details-container1">
+                  <img
+                    src="./assets/techstarter.png"
+                    alt="Experience icon"
+                    class="icon1"
+                  />
+                  <h3>Cloud Engineer</h3>
+                  <a
+                    href="https://www.credly.com/badges/2910fe4a-a949-4621-bd4e-5fdaf2fba1ae/public_url"
+                    target="_blank"
+                    style="color: darkgray"
+                    >Link zum Überprüfen</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#experience">
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" />
+      </a>
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Meine</p>
+      <h1 class="title">Kenntnisse</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- <div class="details-container">
+            <h2 class="experience-sub-title">Frontend technologien </h2>
+            <div class="article-container">
+            </div>
+          </div> -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Technologien</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/postger.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <!-- <p>Basic</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/node-js.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <!-- <p>Intermediate</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/express.png"
+                  alt="Experience icon"
+                  class="icon"
+                  text="ci cd"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <!-- <p>Intermediate</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/github.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Github</h3>
+                  <!-- <p>Intermediate</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/mysql.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>mySQL</h3>
+                  <!-- <p>Intermediate</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/docker.webp"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Docker</h3>
+                  <!-- <p>Intermediate</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/Linux.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Linux</h3>
+                  <!-- <p>Intermediate</p> -->
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/python.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <!-- <p>Intermediate</p> -->
+                </div>
+              </article>
+              <article>
+                <img src="./assets/html.png" alt="icon" class="icon" />
+                <div>
+                  <h3>HTML</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/css.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/tailwind.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tailwind</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/js.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>JavaScript</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/ts.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>TypeScript</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/react.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/n.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Nginx</h3>
+                </div>
+              </article>
+              <!-- <article>
+                <img
+                  src="./assets/API.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>API</h3>
+                </div>
+              </article> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#projects">
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" />
+      </a>
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Hier finden Sie meine</p>
+      <h1 class="title">Projekte</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/Attendify.webp" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Attendify</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/Ashkan-pahlavan/bis_du_da', '_blank')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://my-lits-app.s3.eu-central-1.amazonaws.com/login.html', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/easy-list.webp" alt="Project 2" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">easy Lists</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/Ashkan-pahlavan/Easy-Lists-AWS', '_blank')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://my-lits-app.s3.eu-central-1.amazonaws.com/login.html', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/kredit.webp" alt="Project 3" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Kredit Rechner</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/Ashkan-pahlavan/Kredit-Rechner', '_blank')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('http://kredit-rechner.s3-website.eu-central-1.amazonaws.com', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/peony.webp" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">peony</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/Ashkan-pahlavan/peony-webseite', '_blank')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://my-lits-app.s3.eu-central-1.amazonaws.com/login.html', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/cloud.webp" alt="Project 2" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">TechFoxes</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/gittechstarter/tecchfoxes', '_blank')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://my-lits-app.s3.eu-central-1.amazonaws.com/login.html', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/profilee.webp" alt="Project 3" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">my profile</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/Ashkan-pahlavan/AAM', '_blank')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#cloud">
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" />
+      </a>
+    </section>
+    <section id="cloud">
+      <p class="section__text__p1">Meine gesammelten Kenntnisse in</p>
+      <h1 class="title">Cloud Technologien</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">AWS</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/s3.svg" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>S3</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/lll.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Lambda</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/EBS.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>EBS</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/db.png"
+                  alt="Experience icon"
+                  class="icon"
+                  text="ci cd"
+                />
+                <div>
+                  <h3>DynamoDB</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/ses.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SES</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/EC2.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>EC2</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/53.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Route 53</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/iam.webp" alt="icon" class="icon" />
+                <div>
+                  <h3>IAM</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/front.webp"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Cloud Front</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/rds.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>RDS</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/api-g.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>API GW</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/ligh.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Lightsail</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/vpc.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>VPC</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/cw.svg" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Cloudwatch</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/ECR.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ECR</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/ecs.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ECS</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/amp.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Amplify</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/far.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Fargate</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/for.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CloudFormation</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/elb.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ELB</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#contact">
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" />
+      </a>
+    </section>
+    <section id="contact">
+      <!-- <p class="section__text__p1">Get in Touch</p> -->
+      <h1 class="title">Kontaktieren Sie mich</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <a href="mailto:ashkoli1988@gmail.com" target="_blank">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+          </a>
+          <p>
+            <a href="mailto:ashkoli1988@gmail.com">ashkoli1988@gmail.com</a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <a
+            href="https://www.linkedin.com/in/ashkan-pahlavan/"
+            target="_blank"
+          >
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+          </a>
+          <p>
+            <a
+              href="https://www.linkedin.com/in/ashkan-pahlavan/"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- <section id="input">
+      <p class="section__text__p1">oder</p>
+      <h1 class="title">Schreiben Sie mir direkt :</h1>
+
+      <textarea id="userInput" placeholder="Schreibe hier..."></textarea>
+      <div class="senden">
+        <button id="sendButton" class="send-button">Senden</button>
+        <p class="section__text__p1">
+          Bitte vergessen Sie nicht, Ihre Kontaktdaten einzugeben, damit ich
+          mich bei Ihnen melden kann.
+        </p>
+      </div>
+      <div class="api">
+        <p class="section__text__p1">
+          ✔️wenn Sie mir eine Nachricht schreiben, wird sie über eine API in
+          unserer Datenbank gespeichert. Zusätzlich erhalte ich eine E-Mail über
+          den Amazon SES-Dienst.
+        </p>
+      </div>
+    </section> -->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Über mich</a></li>
+            <li><a href="#certification">Zertifikate</a></li>
+            <li><a href="#experience">Erfahrung</a></li>
+            <li><a href="#projects">Projekte</a></li>
+            <li><a href="#cloud">Cloud</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>&#169; by AAM.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
